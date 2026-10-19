@@ -1,0 +1,313 @@
+{
+  "schemaVersion": 1,
+  "fixtureKind": "synthetic development cases; not independent evaluation or live activity",
+  "fixtureSha256": "03dd3591185e50c44db448d1d46678530eca9253db004c63535f795c15fc2210",
+  "model": "Xenova/multilingual-e5-small",
+  "revision": "761b726dd34fb83930e26aab4e9ac3899aa1fa78",
+  "dtype": "q8",
+  "dimension": 384,
+  "environment": {
+    "node": "v26.8.2",
+    "platform": "darwin",
+    "arch": "arm64",
+    "cpu": "Apple M5"
+  },
+  "config": {
+    "linkage": "average",
+    "metric": "cosine",
+    "cutDistance": 0.18
+  },
+  "timingsMs": {
+    "loadIncludingAnyDownload": 81288.750917,
+    "encodingEach": [
+      9.803124999991269,
+      6.2458750000078,
+      5.576790999999503,
+      4.279915999999503,
+      4.759541999999783,
+      4.678333000003477,
+      3.292083000007551,
+      4.159249999996973,
+      5.136917000010726,
+      3.4855419999948936,
+      5.527916999999434,
+      3.7337079999997513,
+      3.6051250000018626,
+      2.724000000001979,
+      4.1987910000025295,
+      2.53329200000735
+    ],
+    "encodingMedian": 4.279915999999503,
+    "encodingMax": 9.803124999991269,
+    "cluster16": 1.1375419999967562,
+    "cluster256": 37.069333000006736
+  },
+  "resources": {
+    "initialRssBytes": 85409792,
+    "finalRssBytes": 497123328,
+    "maxRssBytes": 634486784,
+    "modelCacheBytes": 135392674
+  },
+  "translations": [
+    {
+      "left": "aw1",
+      "right": "aw2",
+      "similarity": 0.9079754131871329,
+      "rank": 1
+    },
+    {
+      "left": "pi1",
+      "right": "pi2",
+      "similarity": 0.8851691808178623,
+      "rank": 1
+    },
+    {
+      "left": "travel1",
+      "right": "travel2",
+      "similarity": 0.8771864137193095,
+      "rank": 2
+    },
+    {
+      "left": "food1",
+      "right": "food2",
+      "similarity": 0.8679754127151931,
+      "rank": 4
+    },
+    {
+      "left": "paper1",
+      "right": "paper2",
+      "similarity": 0.854185404731667,
+      "rank": 6
+    }
+  ],
+  "groups": [
+    [
+      "aw1",
+      "aw2",
+      "aw3",
+      "pi1",
+      "pi2"
+    ],
+    [
+      "food1",
+      "food3",
+      "negative",
+      "paper1",
+      "paper3",
+      "positive",
+      "travel1",
+      "travel2",
+      "travel3"
+    ],
+    [
+      "food2"
+    ],
+    [
+      "paper2"
+    ]
+  ],
+  "pairMetrics": {
+    "tp": 10,
+    "fp": 36,
+    "fn": 4,
+    "precision": 0.21739130434782608,
+    "recall": 0.7142857142857143
+  },
+  "sensitivity": [
+    {
+      "distance": 0.12,
+      "groups": [
+        [
+          "aw1",
+          "aw2",
+          "aw3"
+        ],
+        [
+          "food1",
+          "food3",
+          "negative",
+          "positive"
+        ],
+        [
+          "food2"
+        ],
+        [
+          "paper1",
+          "paper3"
+        ],
+        [
+          "paper2"
+        ],
+        [
+          "pi1",
+          "pi2"
+        ],
+        [
+          "travel1",
+          "travel3"
+        ],
+        [
+          "travel2"
+        ]
+      ],
+      "metrics": {
+        "tp": 8,
+        "fp": 4,
+        "fn": 6,
+        "precision": 0.6666666666666666,
+        "recall": 0.5714285714285714
+      }
+    },
+    {
+      "distance": 0.15,
+      "groups": [
+        [
+          "aw1",
+          "aw2",
+          "aw3"
+        ],
+        [
+          "food1",
+          "food3",
+          "negative",
+          "positive"
+        ],
+        [
+          "food2"
+        ],
+        [
+          "paper1",
+          "paper3"
+        ],
+        [
+          "paper2"
+        ],
+        [
+          "pi1",
+          "pi2"
+        ],
+        [
+          "travel1",
+          "travel2",
+          "travel3"
+        ]
+      ],
+      "metrics": {
+        "tp": 10,
+        "fp": 4,
+        "fn": 4,
+        "precision": 0.7142857142857143,
+        "recall": 0.7142857142857143
+      }
+    },
+    {
+      "distance": 0.18,
+      "groups": [
+        [
+          "aw1",
+          "aw2",
+          "aw3",
+          "pi1",
+          "pi2"
+        ],
+        [
+          "food1",
+          "food3",
+          "negative",
+          "paper1",
+          "paper3",
+          "positive",
+          "travel1",
+          "travel2",
+          "travel3"
+        ],
+        [
+          "food2"
+        ],
+        [
+          "paper2"
+        ]
+      ],
+      "metrics": {
+        "tp": 10,
+        "fp": 36,
+        "fn": 4,
+        "precision": 0.21739130434782608,
+        "recall": 0.7142857142857143
+      }
+    },
+    {
+      "distance": 0.21,
+      "groups": [
+        [
+          "aw1",
+          "aw2",
+          "aw3",
+          "food1",
+          "food2",
+          "food3",
+          "negative",
+          "paper1",
+          "paper2",
+          "paper3",
+          "pi1",
+          "pi2",
+          "positive",
+          "travel1",
+          "travel2",
+          "travel3"
+        ]
+      ],
+      "metrics": {
+        "tp": 14,
+        "fp": 106,
+        "fn": 0,
+        "precision": 0.11666666666666667,
+        "recall": 1
+      }
+    },
+    {
+      "distance": 0.24,
+      "groups": [
+        [
+          "aw1",
+          "aw2",
+          "aw3",
+          "food1",
+          "food2",
+          "food3",
+          "negative",
+          "paper1",
+          "paper2",
+          "paper3",
+          "pi1",
+          "pi2",
+          "positive",
+          "travel1",
+          "travel2",
+          "travel3"
+        ]
+      ],
+      "metrics": {
+        "tp": 14,
+        "fp": 106,
+        "fn": 0,
+        "precision": 0.11666666666666667,
+        "recall": 1
+      }
+    }
+  ],
+  "contradictionSimilarity": 0.987629392536407,
+  "validations": [
+    "384-dimensional normalized real model vectors",
+    "retraction removes the episode from reclustering",
+    "canonical ordering produces identical cluster membership"
+  ],
+  "notValidated": [
+    "LLM evidence fusion or hypothesis correctness",
+    "ActivityWatch or screen capture",
+    "real user distribution",
+    "Electron packaging",
+    "8-hour CPU and memory profile"
+  ]
+}

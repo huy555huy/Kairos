@@ -1,0 +1,22 @@
+{
+  "description": "人工构造的中英混合开发样本；不是用户真实记录，也不是独立测试集。label 仅用于评价，不传给编码器或聚类器。",
+  "observations": [
+    {"id":"aw1","label":"activity","project":"kairos","text":"阅读 ActivityWatch REST API 文档，查看如何取得前台应用、窗口标题和活动事件的持续时间。"},
+    {"id":"aw2","label":"activity","project":"kairos","text":"Investigating desktop activity tracking: collect the active application, window title and duration using ActivityWatch."},
+    {"id":"aw3","label":"activity","project":"kairos","text":"浏览 aw-watcher-window 的代码，研究怎样把窗口活动数据接入桌面助手。"},
+    {"id":"pi1","label":"agent","project":"kairos","text":"阅读 pi SDK 的工具调用循环，准备把后台上下文交给私人助理。"},
+    {"id":"pi2","label":"agent","project":"kairos","text":"Reading pi SDK documentation about tool execution and injecting context into a personal assistant."},
+    {"id":"travel1","label":"travel","project":null,"text":"比较台北到东京的机票价格和出发日期，计划下个月去日本旅行。"},
+    {"id":"travel2","label":"travel","project":null,"text":"Compare flights from Taipei to Tokyo and choose travel dates for a trip to Japan next month."},
+    {"id":"travel3","label":"travel","project":null,"text":"查看东京酒店和地铁路线，安排日本旅行行程。"},
+    {"id":"food1","label":"food","project":null,"text":"学习菠萝炒饭的做法，准备米饭、鸡蛋和新鲜菠萝。"},
+    {"id":"food2","label":"food","project":null,"text":"Looking up a pineapple fried rice recipe with eggs, cooked rice and fresh pineapple."},
+    {"id":"food3","label":"food","project":null,"text":"搜索菠萝甜点和水果沙拉的食谱。"},
+    {"id":"paper1","label":"paper","project":"thesis","text":"阅读关于长期记忆检索和情境唤回的论文，整理毕业论文的文献笔记。"},
+    {"id":"paper2","label":"paper","project":"thesis","text":"Reading research on long-term memory retrieval and contextual recall for a graduation thesis."},
+    {"id":"paper3","label":"paper","project":"thesis","text":"比较智能体记忆系统如何索引过去经历以及在新情境中召回相关内容。"},
+    {"id":"positive","label":"polarity","project":null,"text":"用户明确说：我喜欢菠萝，想经常吃菠萝。"},
+    {"id":"negative","label":"polarity","project":null,"text":"用户明确说：我不喜欢菠萝，也不想经常吃菠萝。"}
+  ],
+  "pairedTranslations": [["aw1","aw2"],["pi1","pi2"],["travel1","travel2"],["food1","food2"],["paper1","paper2"]]
+}

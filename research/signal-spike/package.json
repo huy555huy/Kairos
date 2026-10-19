@@ -1,0 +1,13 @@
+{
+  "name": "kairos-signal-spike",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "replay": "node replay.mjs",
+    "replay:bge": "node compare-bge.mjs"
+  },
+  "dependencies": {
+    "@huggingface/transformers": "4.3.1",
+    "ml-hclust": "4.0.0"
+  }
+}

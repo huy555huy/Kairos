@@ -1,0 +1,10 @@
+{
+  "repository": "https://github.com/opennars/OpenNARS-for-Applications.git",
+  "commit": "dc4efd0abd520cdb79bf53bfa3c285ebb24f2e8a",
+  "license": "MIT",
+  "profile": "kairos-bounded-nal-v1",
+  "config": {"STAMP_SIZE": [10, 64], "CONCEPTS_MAX": [4096, 512], "TABLE_SIZE": [120, 16]},
+  "maxInputRoots": 64,
+  "maxAtoms": 200,
+  "maxEpisodes": 24
+}

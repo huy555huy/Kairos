@@ -1,0 +1,292 @@
+{
+  "schemaVersion": 1,
+  "fixtureKind": "人工构造的中英混合开发样本；不是用户真实记录，也不是独立测试集。label 仅用于评价，不传给编码器或聚类器。",
+  "fixtureSha256": "03dd3591185e50c44db448d1d46678530eca9253db004c63535f795c15fc2210",
+  "model": "bge-m3:latest",
+  "digest": "7907646426070047a77226ac3e684fbbe8410524f7b4a74d02837e43f2146bab",
+  "modelBytes": 1157672605,
+  "dimension": 1024,
+  "quantization": "F16",
+  "environment": {
+    "node": "v26.8.2",
+    "platform": "darwin",
+    "arch": "arm64",
+    "ollama": "0.34.2"
+  },
+  "timingsMs": {
+    "batch16": 442.4700419999999,
+    "encodingEach": [
+      17.564666999999986,
+      16.145874999999933,
+      15.752583999999956,
+      16.066582999999923,
+      15.537415999999894,
+      16.332915999999955,
+      16.494042000000036,
+      16.266332999999918,
+      15.916666999999961,
+      16.18866700000001,
+      15.996208000000024,
+      15.998333000000002,
+      17.18074999999999,
+      15.327166000000034,
+      16.323875000000044,
+      17.136209000000008
+    ],
+    "encodingMedian": 16.18866700000001,
+    "retrieval2048": 26.502707999999984
+  },
+  "runtime": {
+    "modelSizeBytes": 673049476,
+    "vramBytes": 673049476,
+    "contextLength": 4096
+  },
+  "translations": [
+    {
+      "left": "aw1",
+      "right": "aw2",
+      "similarity": 0.7120611754117206,
+      "rank": 1
+    },
+    {
+      "left": "pi1",
+      "right": "pi2",
+      "similarity": 0.7613094492322294,
+      "rank": 1
+    },
+    {
+      "left": "travel1",
+      "right": "travel2",
+      "similarity": 0.7827544931044277,
+      "rank": 1
+    },
+    {
+      "left": "food1",
+      "right": "food2",
+      "similarity": 0.6228680427591077,
+      "rank": 2
+    },
+    {
+      "left": "paper1",
+      "right": "paper2",
+      "similarity": 0.8142317519356661,
+      "rank": 1
+    }
+  ],
+  "contradictionSimilarity": 0.7956041396434934,
+  "sensitivity": [
+    {
+      "distance": 0.18,
+      "groups": [
+        [
+          "food2"
+        ],
+        [
+          "travel3"
+        ],
+        [
+          "positive"
+        ],
+        [
+          "negative"
+        ],
+        [
+          "food3"
+        ],
+        [
+          "food1"
+        ],
+        [
+          "travel2"
+        ],
+        [
+          "travel1"
+        ],
+        [
+          "paper3"
+        ],
+        [
+          "paper2"
+        ],
+        [
+          "paper1"
+        ],
+        [
+          "pi2"
+        ],
+        [
+          "pi1"
+        ],
+        [
+          "aw3"
+        ],
+        [
+          "aw2"
+        ],
+        [
+          "aw1"
+        ]
+      ],
+      "metrics": {
+        "tp": 0,
+        "fp": 0,
+        "fn": 14,
+        "precision": 0,
+        "recall": 0
+      }
+    },
+    {
+      "distance": 0.25,
+      "groups": [
+        [
+          "food2"
+        ],
+        [
+          "positive",
+          "negative"
+        ],
+        [
+          "travel3"
+        ],
+        [
+          "travel2",
+          "travel1"
+        ],
+        [
+          "food3"
+        ],
+        [
+          "food1"
+        ],
+        [
+          "paper3"
+        ],
+        [
+          "paper2",
+          "paper1"
+        ],
+        [
+          "pi2",
+          "pi1"
+        ],
+        [
+          "aw3"
+        ],
+        [
+          "aw2"
+        ],
+        [
+          "aw1"
+        ]
+      ],
+      "metrics": {
+        "tp": 4,
+        "fp": 0,
+        "fn": 10,
+        "precision": 1,
+        "recall": 0.2857142857142857
+      }
+    },
+    {
+      "distance": 0.3,
+      "groups": [
+        [
+          "food2"
+        ],
+        [
+          "travel3",
+          "travel2",
+          "travel1"
+        ],
+        [
+          "positive",
+          "negative"
+        ],
+        [
+          "food3"
+        ],
+        [
+          "food1"
+        ],
+        [
+          "paper3"
+        ],
+        [
+          "paper2",
+          "paper1"
+        ],
+        [
+          "pi2",
+          "pi1"
+        ],
+        [
+          "aw3"
+        ],
+        [
+          "aw2",
+          "aw1"
+        ]
+      ],
+      "metrics": {
+        "tp": 7,
+        "fp": 0,
+        "fn": 7,
+        "precision": 1,
+        "recall": 0.5
+      }
+    },
+    {
+      "distance": 0.35,
+      "groups": [
+        [
+          "food2"
+        ],
+        [
+          "travel3",
+          "travel2",
+          "travel1"
+        ],
+        [
+          "positive",
+          "negative"
+        ],
+        [
+          "food3"
+        ],
+        [
+          "food1"
+        ],
+        [
+          "paper3"
+        ],
+        [
+          "paper2",
+          "paper1"
+        ],
+        [
+          "pi2",
+          "pi1"
+        ],
+        [
+          "aw3",
+          "aw2",
+          "aw1"
+        ]
+      ],
+      "metrics": {
+        "tp": 9,
+        "fp": 0,
+        "fn": 5,
+        "precision": 1,
+        "recall": 0.6428571428571429
+      }
+    }
+  ],
+  "notValidated": [
+    "real user data or independent evaluation",
+    "LLM evidence fusion",
+    "end-to-end Signal or screen capture",
+    "8-hour resource use",
+    "retrieval accuracy on 2048 distinct observations (runtime probe repeats vectors)"
+  ]
+}

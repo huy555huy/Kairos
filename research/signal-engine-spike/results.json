@@ -1,0 +1,518 @@
+{
+  "engine": {
+    "repository": "https://github.com/opennars/OpenNARS-for-Applications.git",
+    "commit": "dc4efd0abd520cdb79bf53bfa3c285ebb24f2e8a",
+    "license": "MIT",
+    "profile": "kairos-bounded-nal-v1",
+    "config": {
+      "STAMP_SIZE": [
+        10,
+        64
+      ],
+      "CONCEPTS_MAX": [
+        4096,
+        512
+      ],
+      "TABLE_SIZE": [
+        120,
+        16
+      ]
+    },
+    "maxInputRoots": 64,
+    "maxAtoms": 200,
+    "maxEpisodes": 24
+  },
+  "platform": "macOS-27.0-arm64-arm-64bit",
+  "binarySha256": "a5953560fb80005880dff66df11061e7e24d776b051a7cb64e9bd66b7fa3310b",
+  "scope": "Synthetic structured facts -> real ONA. Wall time, dedup, retraction and review eligibility use the host probe. No live perception, language bridge, participation model or pi execution.",
+  "checks": [
+    {
+      "name": "weak_evidence_accumulates",
+      "passed": true,
+      "detail": {
+        "f": 1.0,
+        "c": 0.5625,
+        "expectation": 0.78125,
+        "stamp": [
+          1,
+          3,
+          2
+        ]
+      }
+    },
+    {
+      "name": "same_source_does_not_accumulate",
+      "passed": true,
+      "detail": {
+        "f": 1.0,
+        "c": 0.3,
+        "expectation": 0.65,
+        "stamp": [
+          1
+        ]
+      }
+    },
+    {
+      "name": "counter_changes_belief_before_agent",
+      "passed": true,
+      "detail": {
+        "f": 0.086957,
+        "c": 0.907895,
+        "expectation": 0.125000325515,
+        "stamp": [
+          1,
+          3,
+          2
+        ]
+      }
+    },
+    {
+      "name": "relation_is_induced",
+      "passed": true,
+      "detail": {
+        "f": 1.0,
+        "c": 0.618321,
+        "expectation": 0.8091605,
+        "stamp": [
+          2,
+          6,
+          4,
+          5,
+          1,
+          3
+        ]
+      }
+    },
+    {
+      "name": "content_not_count_changes_result",
+      "passed": true,
+      "detail": {
+        "related": {
+          "f": 1.0,
+          "c": 0.618321,
+          "expectation": 0.8091605,
+          "stamp": [
+            2,
+            6,
+            4,
+            5,
+            1,
+            3
+          ]
+        },
+        "control": {
+          "f": 1.0,
+          "c": 0.350649,
+          "expectation": 0.6753245,
+          "stamp": [
+            2,
+            1
+          ]
+        }
+      }
+    },
+    {
+      "name": "host_collapses_duplicate_facts",
+      "passed": true,
+      "detail": {
+        "f": 1.0,
+        "c": 0.618321,
+        "expectation": 0.8091605,
+        "stamp": [
+          2,
+          6,
+          4,
+          5,
+          1,
+          3
+        ]
+      }
+    },
+    {
+      "name": "wall_time_changes_eligibility",
+      "passed": true,
+      "detail": {
+        "f": 1.0,
+        "c": 0.391304,
+        "expectation": 0.6956519999999999,
+        "stamp": [
+          1,
+          3,
+          2
+        ]
+      }
+    },
+    {
+      "name": "retraction_rebuilds_without_old_support",
+      "passed": true,
+      "detail": {
+        "f": 1.0,
+        "c": 0.461538,
+        "expectation": 0.730769,
+        "stamp": [
+          1,
+          3
+        ]
+      }
+    },
+    {
+      "name": "snapshot_replay_is_reproducible",
+      "passed": true,
+      "detail": {
+        "f": 1.0,
+        "c": 0.618321,
+        "expectation": 0.8091605,
+        "stamp": [
+          2,
+          6,
+          4,
+          5,
+          1,
+          3
+        ]
+      }
+    },
+    {
+      "name": "current_context_required",
+      "passed": true,
+      "detail": "Host selector only"
+    },
+    {
+      "name": "correction_invalidates_immediately",
+      "passed": true,
+      "detail": "Host selector only"
+    },
+    {
+      "name": "expressed_claim_not_reoffered",
+      "passed": true,
+      "detail": "Host selector only"
+    },
+    {
+      "name": "same_context_hold_not_retried",
+      "passed": true,
+      "detail": "Host selector only"
+    },
+    {
+      "name": "first_supported_relevant_claim_is_eligible",
+      "passed": true,
+      "detail": "Eligibility, not live LLM offer"
+    },
+    {
+      "name": "stamp_covers_entire_bounded_pack",
+      "passed": true,
+      "detail": {
+        "f": 1.0,
+        "c": 0.964824,
+        "expectation": 0.9824120000000001,
+        "stamp": [
+          1,
+          64,
+          63,
+          62,
+          61,
+          60,
+          59,
+          58,
+          57,
+          56,
+          55,
+          54,
+          53,
+          52,
+          51,
+          50,
+          49,
+          48,
+          47,
+          46,
+          45,
+          44,
+          43,
+          42,
+          41,
+          40,
+          39,
+          38,
+          37,
+          36,
+          35,
+          34,
+          33,
+          32,
+          31,
+          30,
+          29,
+          28,
+          27,
+          26,
+          25,
+          24,
+          23,
+          22,
+          21,
+          20,
+          19,
+          18,
+          17,
+          16,
+          15,
+          14,
+          13,
+          12,
+          11,
+          10,
+          9,
+          8,
+          7,
+          6,
+          5,
+          4,
+          3,
+          2
+        ]
+      }
+    },
+    {
+      "name": "over_capacity_rejected_before_engine",
+      "passed": true,
+      "detail": "65 roots rejected"
+    },
+    {
+      "name": "upstream_diagnostic_example",
+      "passed": true,
+      "detail": "Upstream labelled-example analogy; not a personal-assistant quality test"
+    }
+  ],
+  "runs": [
+    {
+      "name": "one_weak",
+      "inputRoots": 1,
+      "elapsedMs": 978.643,
+      "answer": {
+        "f": 1.0,
+        "c": 0.3,
+        "expectation": 0.65,
+        "stamp": [
+          1
+        ]
+      }
+    },
+    {
+      "name": "three_independent",
+      "inputRoots": 3,
+      "elapsedMs": 17.707,
+      "answer": {
+        "f": 1.0,
+        "c": 0.5625,
+        "expectation": 0.78125,
+        "stamp": [
+          1,
+          3,
+          2
+        ]
+      }
+    },
+    {
+      "name": "same_root_100_times",
+      "inputRoots": 1,
+      "elapsedMs": 15.854,
+      "answer": {
+        "f": 1.0,
+        "c": 0.3,
+        "expectation": 0.65,
+        "stamp": [
+          1
+        ]
+      }
+    },
+    {
+      "name": "counterevidence",
+      "inputRoots": 3,
+      "elapsedMs": 12.872,
+      "answer": {
+        "f": 0.086957,
+        "c": 0.907895,
+        "expectation": 0.125000325515,
+        "stamp": [
+          1,
+          3,
+          2
+        ]
+      }
+    },
+    {
+      "name": "association_induction",
+      "inputRoots": 6,
+      "elapsedMs": 67.952,
+      "answer": {
+        "f": 1.0,
+        "c": 0.618321,
+        "expectation": 0.8091605,
+        "stamp": [
+          2,
+          6,
+          4,
+          5,
+          1,
+          3
+        ]
+      }
+    },
+    {
+      "name": "unrelated_same_count",
+      "inputRoots": 6,
+      "elapsedMs": 12.615,
+      "answer": {
+        "f": 1.0,
+        "c": 0.350649,
+        "expectation": 0.6753245,
+        "stamp": [
+          2,
+          1
+        ]
+      }
+    },
+    {
+      "name": "duplicated_channels",
+      "inputRoots": 6,
+      "elapsedMs": 62.535,
+      "answer": {
+        "f": 1.0,
+        "c": 0.618321,
+        "expectation": 0.8091605,
+        "stamp": [
+          2,
+          6,
+          4,
+          5,
+          1,
+          3
+        ]
+      }
+    },
+    {
+      "name": "one_day_decay",
+      "inputRoots": 3,
+      "elapsedMs": 7.719,
+      "answer": {
+        "f": 1.0,
+        "c": 0.391304,
+        "expectation": 0.6956519999999999,
+        "stamp": [
+          1,
+          3,
+          2
+        ]
+      }
+    },
+    {
+      "name": "retracted_root",
+      "inputRoots": 2,
+      "elapsedMs": 7.433,
+      "answer": {
+        "f": 1.0,
+        "c": 0.461538,
+        "expectation": 0.730769,
+        "stamp": [
+          1,
+          3
+        ]
+      }
+    },
+    {
+      "name": "restart_and_arrival_order",
+      "inputRoots": 6,
+      "elapsedMs": 61.525,
+      "answer": {
+        "f": 1.0,
+        "c": 0.618321,
+        "expectation": 0.8091605,
+        "stamp": [
+          2,
+          6,
+          4,
+          5,
+          1,
+          3
+        ]
+      }
+    },
+    {
+      "name": "sixty_four_independent_roots",
+      "inputRoots": 64,
+      "elapsedMs": 16.871,
+      "answer": {
+        "f": 1.0,
+        "c": 0.964824,
+        "expectation": 0.9824120000000001,
+        "stamp": [
+          1,
+          64,
+          63,
+          62,
+          61,
+          60,
+          59,
+          58,
+          57,
+          56,
+          55,
+          54,
+          53,
+          52,
+          51,
+          50,
+          49,
+          48,
+          47,
+          46,
+          45,
+          44,
+          43,
+          42,
+          41,
+          40,
+          39,
+          38,
+          37,
+          36,
+          35,
+          34,
+          33,
+          32,
+          31,
+          30,
+          29,
+          28,
+          27,
+          26,
+          25,
+          24,
+          23,
+          22,
+          21,
+          20,
+          19,
+          18,
+          17,
+          16,
+          15,
+          14,
+          13,
+          12,
+          11,
+          10,
+          9,
+          8,
+          7,
+          6,
+          5,
+          4,
+          3,
+          2
+        ]
+      }
+    }
+  ],
+  "medianProcessMs": 16.871
+}
